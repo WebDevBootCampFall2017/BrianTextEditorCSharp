@@ -81,6 +81,7 @@ namespace TextEditorC
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Save Function
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "Text Files (.txt)|*txt";
             sfd.Title = "Save file...";
@@ -90,6 +91,18 @@ namespace TextEditorC
                 sw.Write(richTextBox1.Text);
                 sw.Close();
             }
+        }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+                richTextBox1.Font = fontDialog1.Font;
+        }
+
+        private void fontColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+                richTextBox1.ForeColor = colorDialog1.Color;
         }
     }
 }

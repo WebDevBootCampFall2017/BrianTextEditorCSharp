@@ -37,25 +37,6 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timesNewRomanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calibriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.harringtonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.arialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontSizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontStyleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.boldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.underlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.italicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontColotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.greenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.findToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.findAndReplaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,6 +46,11 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.fontColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,155 +116,19 @@
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fontToolStripMenuItem,
-            this.fontSizeToolStripMenuItem,
-            this.fontStyleToolStripMenuItem,
-            this.fontColotToolStripMenuItem,
             this.findToolStripMenuItem,
-            this.findAndReplaceToolStripMenuItem});
+            this.findAndReplaceToolStripMenuItem,
+            this.fontColorToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
             // fontToolStripMenuItem
             // 
-            this.fontToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.timesNewRomanToolStripMenuItem,
-            this.calibriToolStripMenuItem,
-            this.harringtonToolStripMenuItem,
-            this.arialToolStripMenuItem});
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
             this.fontToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.fontToolStripMenuItem.Text = "Font";
-            // 
-            // timesNewRomanToolStripMenuItem
-            // 
-            this.timesNewRomanToolStripMenuItem.Name = "timesNewRomanToolStripMenuItem";
-            this.timesNewRomanToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.timesNewRomanToolStripMenuItem.Text = "Times New Roman";
-            // 
-            // calibriToolStripMenuItem
-            // 
-            this.calibriToolStripMenuItem.Name = "calibriToolStripMenuItem";
-            this.calibriToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.calibriToolStripMenuItem.Text = "Calibri";
-            // 
-            // harringtonToolStripMenuItem
-            // 
-            this.harringtonToolStripMenuItem.Name = "harringtonToolStripMenuItem";
-            this.harringtonToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.harringtonToolStripMenuItem.Text = "Harrington";
-            // 
-            // arialToolStripMenuItem
-            // 
-            this.arialToolStripMenuItem.Name = "arialToolStripMenuItem";
-            this.arialToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
-            this.arialToolStripMenuItem.Text = "Arial";
-            // 
-            // fontSizeToolStripMenuItem
-            // 
-            this.fontSizeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6});
-            this.fontSizeToolStripMenuItem.Name = "fontSizeToolStripMenuItem";
-            this.fontSizeToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-            this.fontSizeToolStripMenuItem.Text = "Font Size";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(86, 22);
-            this.toolStripMenuItem1.Text = "8";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(86, 22);
-            this.toolStripMenuItem3.Text = "10";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(86, 22);
-            this.toolStripMenuItem4.Text = "12";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(86, 22);
-            this.toolStripMenuItem5.Text = "14";
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(86, 22);
-            this.toolStripMenuItem6.Text = "16";
-            // 
-            // fontStyleToolStripMenuItem
-            // 
-            this.fontStyleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.boldToolStripMenuItem,
-            this.underlineToolStripMenuItem,
-            this.italicToolStripMenuItem});
-            this.fontStyleToolStripMenuItem.Name = "fontStyleToolStripMenuItem";
-            this.fontStyleToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-            this.fontStyleToolStripMenuItem.Text = "Font Style";
-            // 
-            // boldToolStripMenuItem
-            // 
-            this.boldToolStripMenuItem.Name = "boldToolStripMenuItem";
-            this.boldToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.boldToolStripMenuItem.Text = "Bold";
-            // 
-            // underlineToolStripMenuItem
-            // 
-            this.underlineToolStripMenuItem.Name = "underlineToolStripMenuItem";
-            this.underlineToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.underlineToolStripMenuItem.Text = "Underline";
-            // 
-            // italicToolStripMenuItem
-            // 
-            this.italicToolStripMenuItem.Name = "italicToolStripMenuItem";
-            this.italicToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.italicToolStripMenuItem.Text = "Italic";
-            // 
-            // fontColotToolStripMenuItem
-            // 
-            this.fontColotToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.blackToolStripMenuItem,
-            this.redToolStripMenuItem,
-            this.blueToolStripMenuItem,
-            this.greenToolStripMenuItem});
-            this.fontColotToolStripMenuItem.Name = "fontColotToolStripMenuItem";
-            this.fontColotToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-            this.fontColotToolStripMenuItem.Text = "Font Color";
-            // 
-            // blackToolStripMenuItem
-            // 
-            this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
-            this.blackToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.blackToolStripMenuItem.Text = "Black";
-            // 
-            // redToolStripMenuItem
-            // 
-            this.redToolStripMenuItem.Name = "redToolStripMenuItem";
-            this.redToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.redToolStripMenuItem.Text = "Red";
-            // 
-            // blueToolStripMenuItem
-            // 
-            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.blueToolStripMenuItem.Text = "Blue";
-            // 
-            // greenToolStripMenuItem
-            // 
-            this.greenToolStripMenuItem.Name = "greenToolStripMenuItem";
-            this.greenToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
-            this.greenToolStripMenuItem.Text = "Green";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // findToolStripMenuItem
             // 
@@ -348,6 +198,17 @@
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // fontColorToolStripMenuItem
+            // 
+            this.fontColorToolStripMenuItem.Name = "fontColorToolStripMenuItem";
+            this.fontColorToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.fontColorToolStripMenuItem.Text = "Font Color";
+            this.fontColorToolStripMenuItem.Click += new System.EventHandler(this.fontColorToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -378,31 +239,17 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fontSizeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fontStyleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fontColotToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem findAndReplaceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wordWrapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem timesNewRomanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calibriToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem harringtonToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem arialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem boldToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem underlineToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem italicToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem redToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem greenToolStripMenuItem;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem fontColorToolStripMenuItem;
     }
 }
 
