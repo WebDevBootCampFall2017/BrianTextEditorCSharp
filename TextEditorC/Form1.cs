@@ -95,8 +95,11 @@ namespace TextEditorC
 
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            fontDialog1.ShowColor = true;
+
             if (fontDialog1.ShowDialog() == DialogResult.OK)
                 richTextBox1.Font = fontDialog1.Font;
+            richTextBox1.ForeColor = fontDialog1.Color;
         }
 
         private void fontColorToolStripMenuItem_Click(object sender, EventArgs e)
