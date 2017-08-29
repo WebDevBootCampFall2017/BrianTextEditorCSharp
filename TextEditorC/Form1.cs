@@ -107,5 +107,29 @@ namespace TextEditorC
             if (colorDialog1.ShowDialog() == DialogResult.OK)
                 richTextBox1.ForeColor = colorDialog1.Color;
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            
+
+        }
+
+        private void wordWrapToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            switch (wordWrapToolStripMenuItem.Checked)
+            {
+                case true:
+                    wordWrapToolStripMenuItem.Checked = false;
+                    richTextBox1.WordWrap = false;
+                    richTextBox1.ScrollBars = RichTextBoxScrollBars.Both;
+                    break;
+                case false:
+                    wordWrapToolStripMenuItem.Checked = true;
+                    richTextBox1.WordWrap = true;
+                    richTextBox1.ScrollBars = RichTextBoxScrollBars.Vertical;
+                    break;
+            }
+        }
     }
 }
