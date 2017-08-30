@@ -154,15 +154,8 @@ namespace TextEditorC
 
         private void saveToolStripMenu1_Click(object sender, EventArgs e)
         {
-            /*string path = ofd.FileName;
-            try
-            {
-                File.WriteAllText(path , richTextBox1.Text);
-            }
-            catch (Exception error)
-            {
-                MessageBox.Show(error.Message);
-            }*/
+            //save file in current file
+            File.WriteAllText(path , richTextBox1.Text);
         }
 
         private void findToolStripMenuItem_Click(object sender, EventArgs e)
