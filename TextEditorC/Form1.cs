@@ -13,6 +13,9 @@ namespace TextEditorC
 {
     public partial class Form1 : Form
     {
+
+        string path; string[] patharray;
+
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +34,7 @@ namespace TextEditorC
         private void contentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Program Info
-            MessageBox.Show("Text Editor in C#." +
+            MessageBox.Show("Text Editor in C#" +
                 "\nBrian Port" +
                 "\nVersion: 1.04" +    //update as needed
                 "\nCoding Boot Camp");
@@ -59,16 +62,7 @@ namespace TextEditorC
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //open file function
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Text Files (.txt)|*.txt";
-            ofd.Title = "Open a file...";
-            if (ofd.ShowDialog() == DialogResult.OK)
-            {
-                StreamReader sr = new StreamReader(ofd.FileName);
-                richTextBox1.Text = sr.ReadToEnd();
-                sr.Close();
-            }
+            
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
@@ -128,7 +122,7 @@ namespace TextEditorC
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Save Function
+            //Save As Function
             SaveFileDialog sfd = new SaveFileDialog();
             sfd.Filter = "Text Files (.txt)|*.txt";
             sfd.Title = "Save file as...";
@@ -139,5 +133,42 @@ namespace TextEditorC
                 sw.Close();
             }
         }
+
+        private void openToolStripMenuOpen_Click(object sender, EventArgs e)
+        {
+            //open file function
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Text Files (.txt)|*.txt";
+            ofd.Title = "Open a file...";
+            ofd.FileName = "";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                //StreamReader sr = new StreamReader(ofd.FileName);
+                path = ofd.FileName;
+                richTextBox1.Text = File.ReadAllText(path);
+                patharray = File.ReadAllLines(path);
+                //sr.Close();
+                Form1.ActiveForm.Text = string.Format("{0}" , path);
+            }
+        }
+
+        private void saveToolStripMenu1_Click(object sender, EventArgs e)
+        {
+            /*string path = ofd.FileName;
+            try
+            {
+                File.WriteAllText(path , richTextBox1.Text);
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }*/
+        }
+
+        private void findToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+    
     }
 }
